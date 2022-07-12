@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="coffee_icon" format="reference" />
+    <attr name="primaryTextColor" format="color" />
+
+    <declare-styleable name="CustomImageView">
+        <attr name="custom_icon" format="reference" />
+    </declare-styleable>
+</resources>
