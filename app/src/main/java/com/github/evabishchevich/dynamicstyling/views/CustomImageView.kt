@@ -46,8 +46,7 @@ class CustomImageView @JvmOverloads constructor(
     }
 
     private fun applyAttributes(context: Context, attrs: AttributeSet) {
-        attrVal = attrs.getAttributeValue("http://schemas.android.com/apk/res-auto", "custom_icon")
-
+        attrVal = attrs.getAttributeValue("http://schemas.android.com/apk/res/android", "src")
         updateDrawable(context)
     }
 
@@ -56,7 +55,7 @@ class CustomImageView @JvmOverloads constructor(
         if (attributeValue != null && attributeValue.isEmpty().not()) {
             val resId = getResId(ctx, attributeValue)
             setImageDrawable(ContextCompat.getDrawable(ctx, resId))
-            printSomeData()
+
         }
     }
 
